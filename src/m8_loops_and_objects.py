@@ -25,6 +25,8 @@ def main():
     draw_circles2()
     print_sequence3()
     draw_circles3()
+    print_cosines()
+    draw_cosines_and_sines()
 
     window.update()
     window.close_on_mouse_click()
