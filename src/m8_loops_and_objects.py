@@ -59,6 +59,31 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
 
+def better_draw_circles(point, radii):
+    """
+    Starts out the same as the   draw_circles   function defined ABOVE.
+    You Will make it an IMPROVED, MORE POWERFUL function per the above _TODO_.
+    """
+    turtle = rg.SimpleTurtle()
+    turtle.pen_up()
+    turtle.go_to(point)
+    turtle.set_heading(0)  # Point "east" (towards the right)
+
+    for k in range(1, 11):  # k becomes 1, 2, 3, ... 10
+
+        turtle.pen_up()
+
+        # Go DOWN 15 pixels, ending up pointing east again
+        turtle.right(90)
+        turtle.forward(radii)
+        turtle.left(90)
+
+        turtle.pen_down()
+        turtle.draw_circle(radii * k) # Radius 15, 30, 45, 60, ...
+
+def size_of_radii(a):
+    radii=a
+    return radii
 
 def print_sequence2():
     """
