@@ -40,7 +40,7 @@ def print_sequence1():
     for k in range(201):
      print(k)
 
-def draw_circles1():
+def draw_circles1(point, radii):
     """
     -- Constructs an rg.RoseWindow whose width and height are both 400.
     -- Constructs and draws 21 rg.Circle objects such that:
@@ -49,7 +49,7 @@ def draw_circles1():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # HINT: You might find a prior module useful when 'writing' this code.
@@ -59,11 +59,6 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
 
-def better_draw_circles(point, radii):
-    """
-    Starts out the same as the   draw_circles   function defined ABOVE.
-    You Will make it an IMPROVED, MORE POWERFUL function per the above _TODO_.
-    """
     turtle = rg.SimpleTurtle()
     turtle.pen_up()
     turtle.go_to(point)
@@ -106,6 +101,8 @@ def print_sequence2():
     print('Running print_sequence2:')
     print('--------------------------------------------------')
 
+ for k in range(390+1):
+     print(k)
 
 def draw_circles2():
     """

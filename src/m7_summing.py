@@ -114,7 +114,6 @@ def sum_square_roots(n):
     """
 
     t = 0
-    print(n)
     for k in range(n+1):
         t = t + (math.sqrt(2*k))
 
