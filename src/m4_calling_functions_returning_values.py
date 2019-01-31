@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Jose Ramirez.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m4t_tester
 
@@ -38,7 +38,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -73,6 +73,23 @@ def run_test_sum_of_digits():
     # Below this comment, add 3 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
+    # Test 2:
+    expected1 = 6
+    answer1 = sum_of_digits(123)
+    print('Test 2 expected:', expected1)
+    print('       actual:  ', answer1)
+
+    # Test 3:
+    expected2 = 17
+    answer2 = sum_of_digits(593)
+    print('Test 3 expected:', expected2)
+    print('       actual:  ', answer2)
+
+    # Test 4:
+    expected3 = 11
+    answer3 = sum_of_digits(470)
+    print('Test 4 expected:', expected3)
+    print('       actual:  ', answer3)
 
 def sum_of_digits(number):
     """
