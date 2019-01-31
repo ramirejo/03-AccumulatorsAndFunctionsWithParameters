@@ -267,7 +267,7 @@ def run_test_fancy_sums_of_digits():
     # in the doc-string to be sure that you understand the specification.
     # -------------------------------------------------------------------------
 
-    expected = 2
+    expected = 1
     answer = fancy_sums_of_digits(10)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
@@ -306,9 +306,9 @@ def fancy_sums_of_digits(n):
             -- the sum of the digits in (X ** Y) is 124309 (trust me!)
             -- so this function returns 124309.
     """
-    X = sum_of_digits(n*1000)
+    X = sum_of_digits(n**1000)
     Y = sum_of_digits(n**999)
-    fancy_sum = sum_of_digits(X ** Y)
+    fancy_sum = sum_of_digits(X**Y)
     return fancy_sum
 
     # -------------------------------------------------------------------------
